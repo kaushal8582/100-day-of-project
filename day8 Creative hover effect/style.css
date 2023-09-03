@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #051937 , #253362 , #292a3d, #241a5a , #4a3b68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-box{
+    
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+}
+
+.box{
+    overflow: hidden;
+    z-index: 9;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+}
+.img-div{
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+      transition: all 0.5s;
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.box h2{
+    margin-top: 13px;
+    font-size: 24px;
+        transition: all 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-box::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+     transition: all 0.5s;
+}
+
+.main-box::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+   transition: all 0.5s;
+}
+.main-box:hover::before{
+ rotate: 20deg;
+}
+.main-box:hover::after{
+ rotate: 10deg;
+}
+.box:hover .img-div{
+    height: 80%;
+} 
+.box:hover .box h2{
+     transform: translateY(0%);
+} 
