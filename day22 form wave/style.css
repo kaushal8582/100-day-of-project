@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+section{
+  
+    width: 100%;
+    height: 100%;
+    background: url(Peaky\ Blinder\ Suits.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+    /* display: none; */
+}
+section p{
+    width: 40%;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+section button{
+    font-size: 1.4vw;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 92, 0);
+    transition: all 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section button:hover{
+    background-color: rgb(0, 83, 101);
+}
+
+.form-box{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-box form{
+    
+    position: relative;
+    padding: 2vw;
+    background-color: rgb(0, 0, 52);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 4vw;
+}
+.form-box form input{
+    cursor: pointer;
+    padding-left: 15px;
+    height: 35px ;
+    width: 250px;
+   border-radius: 10px;
+    outline: none;
+}
+.form-box form label{
+    font-size: 1.3vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+#sumbit{
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 1.3vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(1, 141, 176);
+    transition: linear 0.3s ease-in;
+}
+#sumbit:hover{
+    background-color: gray;
+}
+.form-box h2{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+
+
+/* javaScript add class */
+.form{
+    display: none;
+}
