@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main{
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 106, 98);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+.button1{
+    cursor: pointer;    
+    width: 170px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+
+}
+.button1::before{
+    width: 100%;
+    height: 100%;
+    content: "Download";
+    position: absolute;
+    top: 0;
+    left: 0;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: red;
+    transform: translateY(-130px);
+    transition: all 1s ease-in-out;
+}
+.button1:hover:before{
+     transform: translateY(0px);
+     background-color: red;
+}
+
+/* Second Button CSS */
+
+.button2{
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    position: relative;
+}
+.button2::before{
+    content: "Buy Now";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+    color: black;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s ;
+}
+
+.button2::after{
+     content: "Buy Now";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(59, 226, 255);
+    color: black;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s ;
+    transition-delay: 0.25s;
+}
+.button2:hover:before,
+.button2:hover:after{
+    transform: rotateX(0deg);
+}
+
+
+.button3{
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    transition: all 0.25s;
+
+}
+.button3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    top: 3px;
+    transform-origin: top;
+    z-index: -1;
+    left: 0;
+    transition: all 0.25s;
+    mix-blend-mode:difference;
+    
+}
+
+.button3::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    left: 0;
+    z-index: -1;
+    bottom: 3px;
+    transform-origin: bottom;
+    transition: all 0.25s;
+    mix-blend-mode:difference ;
+}
+
+.button3:hover:before{
+    top: -6px;
+    transform: perspective(1000px) rotateX(75deg);
+
+}
+.button3:hover::after{
+    bottom: -6px;
+    transform: perspective(1000px) rotateX(75deg);
+
+}
+
+
+
+.button4{
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    position: relative;
+    color: rgb(255, 187, 14);
+    background-color: rgb(255, 255, 255);
+}
+
+.button4::after{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    top: -7px;
+    left: -7px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    transition: all 0.25s;
+
+}
+.button4:hover::after,
+.button4:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.button4::before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 0, 0, 0);
+   bottom:-7px;
+   right: -7px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: all 0.25s;
+
+}
+
+.button5{
+    position: absolute;
+    margin-left: 60px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    position: relative;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s;
+    border-radius: 100px;
+}
+.button5::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    border-radius: 100px;
+    transition: all 1s;
+   
+}
+.button5:hover::before{
+ transform: scaleX(1.4) scaleY(1.6);
+ opacity: 0;
+}
+.button5:hover{
+    transform: translateX(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.button5:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
