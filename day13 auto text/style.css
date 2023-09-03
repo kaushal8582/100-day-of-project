@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+p{
+    font-size: 3rem;
+}
+.js{
+    color: rgb(228, 228, 67);
+}
+.typed-text{
+    border-right: 3px solid rgb(37, 255, 13);
+    color: rgb(37, 255, 13);
+}
+.cursor{
+    color: rgb(240, 4, 4);
+}

@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: all 0.3s;
+
+}
+
+label{
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 24px;
+    position: relative;
+    transition: all 0.3s;
+
+}
+#check{
+    display: none;
+}
+.boll{
+    position: absolute;
+    background-color: white;
+    top: 5px;
+    left: 5px;
+   
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateX(200%);
+    transition: all 0.3s;
+
+}
+
+#check:checked ~ label{
+    transition: all 0.3s;
+
+    border-color: black;
+}

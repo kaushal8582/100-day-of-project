@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #EDC3B2;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+h2{
+    padding: 10px 15px;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    scale: 0.9;
+}
