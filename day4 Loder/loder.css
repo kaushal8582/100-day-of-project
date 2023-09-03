@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #856;
+    display:  flex;
+    align-items:center;
+    justify-content:center;
+    gap: 25px;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: loding;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.box:nth-child(2){
+    animation-delay: 0.3s;
+}
+.box:nth-child(3){
+    animation-delay: 0.5s;
+}
+.box:nth-child(4){
+    animation-delay: 0.7s;
+}
+.box:nth-child(5){
+    animation-delay: 0.9s;
+}
+
+@keyframes loding {
+    0%{
+        scale: 1;
+    }50%{
+        scale: 1.5;
+    }100%{
+        scale: 1;
+    }
+    
+}
