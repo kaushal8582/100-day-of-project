@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    border-radius: 13px;
+    padding: 1.4vw 3vw;
+    width: 40%;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+main button {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: rgb(255, 255, 255);
+    background-color: #6666ff;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+
+}
+.second{
+    transition: all 0.3s ease;
+    display: none;
+}
+
+/* javaScript Class */
+
+.togle{
+    display: block;
+}
