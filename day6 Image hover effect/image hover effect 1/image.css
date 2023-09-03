@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+.container{
+    border-radius: 15px;
+    height: 400px;
+    width: 500px;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+
+}
+ .container .page1{
+     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    
+}
+.container .page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: all 0.6s;
+}
+.container:hover .page2{
+     transform: translateX(0%);
+}
+.container:hover .page1{
+     transform: translateX(100%);
+}
+
+/* 2nd Box animated */
+.container2{
+     border-radius: 15px;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container2 .page1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.6s;
+  
+}
+.container2:hover .page1{
+    transform: translateY(-30%);
+}
+.container2 .page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container2 .pag2{
+    padding-top: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+   background-color: black;
+}
+.container2 .pag2 h2{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 3rd box design */
+.container3{
+     border-radius: 15px;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container3 .page1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.6s;
+  
+}
+
+.container3 .page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container3 .pag2{
+     padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+    width: 90%;
+    height: 100%;
+    transition: all 0.6s;
+   transform: translateY(98%);
+   background-color: rgb(245, 0, 0);
+   opacity: 0.3;
+}
+
+.container3 .pag2 h2{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container3 button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container3:hover .pag2{
+    width: 100%;
+     position: absolute;
+    height: 100%;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
