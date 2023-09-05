@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(154, 152, 152);
+}
+
+#form{
+    box-shadow: 0 0 10px black;
+    position: relative;
+     width: 530px;
+    border-radius: 10px;
+    height: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 15px;
+    /* border: 2px solid black; */
+}
+
+#form.invalid::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    width: 30px;
+    height: 30px;
+    background: url(icon/cross.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#form.valid::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    width: 30px;
+    height: 30px;
+    background: url(icon/check.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#text{
+    width: 100%;
+    padding-left: 15px;
+    /* border-radius: 10px; */
+    height: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+
+}
+#text::placeholder{
+    font-size: 1.3vw;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: black;
+}
+.cross{
+      
+}
