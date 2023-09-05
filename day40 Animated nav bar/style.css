@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.page1,
+.page2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.page1 nav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+    transition:  all 0.3s ease-in-out;
+}
+
+.page1 nav h2{
+    font-size: 2vw;
+    font-family: sans-serif;
+
+}
+
+/* JavaScript class */
+
+.page1 nav.active{
+    background-color: white;
+}
+.page1 nav.active li{
+    color: black;
+}
+.page1 nav.active h2{
+    color: black;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.text li{
+    list-style: none;
+}
+
+.back{
+    
+    width: 100%;
+    height: 100vh;
+    /* background: url(wp7043880-pc-gaming-hd-wallpapers.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.106);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+   
+}
+.back h1{
+    font-family: sans-serif;
+    font-size: 2vw;
+    color: black;
+}
+.back p{
+    width: 40%;
+    color: black;
+}
+
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.box{
+     font-family: sans-serif;
+    padding: 15px;
+    width: 15%;
+    color: black;
+    border: 2px solid red;
+}
