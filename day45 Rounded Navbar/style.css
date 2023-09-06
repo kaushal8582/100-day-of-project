@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease;
+    background: linear-gradient(40deg, rgba(255,22,234,1) 39%, rgba(22,202,197,1) 97%);
+}
+.box{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all 0.9s ease;
+}
+.icon{
+    cursor: pointer;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 13px;
+    transition: all 0.3s ease;
+   
+}
+.icon i{
+    font-size: 1.4rem;
+}
+.icon:hover i {
+    color: rgba(22,202,197,1);
+}
+
+.media{
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.reco{
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.audio{
+    left: 10%;
+    top: 50%;
+     transform: translateY(-50%);
+}
+.layer{
+    right: 10%;
+    top: 50%;
+     transform: translateY(-50%);
+}
+
+.plus{
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:rgba(255,22,234,1) ; 
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    
+}
+.plus i{
+    padding: 10px;
+    transition: all 0.3s ease;
+     rotate: 180deg;
+}
+.line{
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background-color:rgba(22,202,197,1) ;
+    rotate: 45deg;
+   
+
+}
+.l1{
+     top: 30%;
+      left: 16%;
+}
+.l2{
+    top: 30%;
+    right: 16%;
+    rotate: -45deg;
+
+}
+.l3{
+    bottom: 30%;
+    right: 16%;
+}
+.l4{
+    bottom: 30%;
+    left: 16%;
+     rotate: -45deg;
+}
+
+
+/* javaScript Class */
+
+.circle.active{
+    transform: scale(1) rotate(0deg);
+}
+/* .box.active{
+} */
+.plus.active i{
+    rotate: 0deg;
+}
