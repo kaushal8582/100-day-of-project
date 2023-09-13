@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.inner-cursor {
+    z-index: 99;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s height 0.5s;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.outer-cursor {
+    z-index: 99;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.1s;
+    mix-blend-mode: difference;
+    cursor: none;
+     pointer-events: 0.1ms;
+}
