@@ -1,0 +1,63 @@
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.image-container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.7s;
+}
+.image-container span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.image-container span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.btn-container{
+    position: relative;
+    width: 80%;
+}
+.btn {
+    position: absolute;
+    bottom: -300px;
+    background: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 800;
+
+}
+
+#prev{
+    left: 250px;
+}
+#next{
+    right: 200px;
+}
+.btn:hover{
+    filter: brightness(1.5);
+}

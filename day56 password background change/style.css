@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    /* background-color: black; */
+}
+.k{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(wp7043679-pc-gaming-hd-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(20px);
+}
+
+.container{
+    box-shadow: 0 0 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: gray;
+    gap: 25px;
+}
+
+.container .input{
+    width: 350px;
+    height: 35px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 1vw;
+}
+.container button{
+    background-color: crimson;
+    font-size: 1.2vw;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
