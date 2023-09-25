@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 2px 2px 5px 1px black;
+   margin-bottom: 40px;
+
+}
+.inputs input{
+    width: 100px;
+    color: white;
+    background-color: white;
+}
+.show-code{
+    padding-top: 30px;
+    padding-bottom:20px ;
+    width: 80%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+}
+.code{
+    height: 40px;
+    width: 70%;
+    border: none;
+    /* border: 1px solid black; */
+    box-shadow: 0 2px 1px 0 black;
+    outline: none;
+    padding-left: 15px;
+    font-size: 1vw;
+
+}
+.copy{
+    cursor: pointer;
+    width: 20%;
+    height: 40px;
+    font-size: 1.2vw;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+.copy:hover{
+    background-color: crimson;
+    border: none;
+    color: white;
+}
+.colors{
+    width: 40%;
+}
+.colors input{
+    width: 100%;
+}
