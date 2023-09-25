@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #535353;
+}
+.calculator{
+   
+    position: relative;
+    display: grid;
+}
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.calculator spna{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    background-color: #292929;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0,o.1);
+}
+.calculator spna:active{
+    background-color: rgb(255,163,26);
+    color: rgb(255, 255, 255);
+}
+.calculator spna.cler{
+    grid-column: span 2;
+    width: 120px;
+    background-color: rgb(255,163,26);
+}
+.calculator spna.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator spna.equal{
+    background-color: rgb(255,163,26);
+}
