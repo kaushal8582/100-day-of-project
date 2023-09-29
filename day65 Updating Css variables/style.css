@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.box1 span{
+    font-family: sans-serif;
+    color: white;
+
+}
+.box2{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(tudose-madalin-_jHrRvZtmAQ-unsplash.jpg);
+   background-color: black;
+   /* padding: 25vw; */
+   border: 5px solid;
+   filter: blur(1px);
+   border-color: red;
+   border-radius: 50%;
+}

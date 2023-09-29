@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: crimson;
+    padding: 5rem 6rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+
+}
+.box h2{
+    padding-bottom: 20px;
+    font-size: 1.4vw;
+    text-align: center;
+    color: white;
+}
+.captch-box{
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+     margin-bottom: 15px;
+
+}
+.captch-content{
+    text-align: center;
+    padding-top: 5px;
+    background-color: black;
+    width: 70%;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    user-select: none;
+    letter-spacing: 2px;
+    font-size: 1.4vw;
+   
+}
+.reload{
+    cursor: pointer;
+    background-color: white;
+    width: 17%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.captcha-input{
+    width: 320px;
+    height: 40px;
+    position: relative;
+}
+.captcha-input input{
+    margin-left: 17px;
+    width: 100%;
+    height: 40px;
+    padding-left: 14px;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    border: none;
+    font-size: 1vw;
+     letter-spacing: 2px;
+}
+.check{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: skyblue;
+    width: 70px;
+    transition: transform 0.3s ease-in;
+}
+
+.check:active {
+    scale: 0.8;
+}
+
+.result{
+   padding-top: 15px;
+    text-align: center;
+    font-size: 1vw;
+    display: none;
+    color: rgb(255, 234, 0);
+}
+
