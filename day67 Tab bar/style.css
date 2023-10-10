@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 94, 234);
+}
+
+.nav{
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+}
+.nav ul li{
+   font-family: sans-serif;
+   font-weight: 600;
+    font-size: 1.3vw;
+    color: white;
+    cursor: pointer;
+}
+.nav ul li.active{
+    background-color: #000;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+
+/* section0 */
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section{
+    width: 70%;
+    padding: 20px 30px ;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+
+
+.section.visible{
+    display: block;
+}
+
+
+.about h2{
+    padding: 25px 0;
+    font-size: 1,3vw;
+    font-family: sans-serif;
+}
+.img img{
+    
+   height: 200px;
+}
+.about p{
+   padding: 0 20%;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.629);
+    line-height: 25px;
+}
+
+
+
+/* Cources */
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cource h2{
+    font-size: 2.3vw;
+    padding: 15px 0;
+    font-family: sans-serif;
+}
+.box2 h2{
+    font-size: 1.7vw;
+}
+.box2 div{
+    box-shadow:  0 0 10px black;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.box2 img{
+    height: 377px;
+}
+
+
+
+.contact h2{
+    font-size: 1.4vw;
+    font-family: sans-serif;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact a{
+    padding: 10px 20px;
+    font-size: 1.3vw;
+    width: 300px;
+    font-family: sans-serif;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    /* background-color: #fb4561; */
+    color: white;
+}
+
+.git{
+    background-color: rgb(7, 113, 113);
+}
+.gmail{
+    background-color: rgb(158, 0, 69);
+}
+.ins{
+    background-color: rgb(96, 0, 169);
+}
+.link{
+    background-color: rgb(129, 0, 116);
+}
+.you{
+    background-color: rgb(90, 92, 0);
+}
+
+

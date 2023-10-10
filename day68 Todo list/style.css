@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(126, 71, 0);
+}
+
+main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    width: 350px;
+    /* padding: 15px 30px; */
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1vw;
+    border: none;
+    border: 2px solid rgb(1, 255, 179);
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 330px;
+    height: 40px;
+    position: relative;
+    border-radius: 15px;
+    border-left: 6px solid rgb(64, 238, 0);
+    background-color: white;
+    padding: 0 20px;
+}
+
+.delete{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2.2vw;
+}
+
+.output span{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.result{
+    visibility: hidden;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    cursor: none;
+    transform: translateX(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.663);
+}
+
+.result.success{
+    visibility: visible;
+    transform: translateX(100px);
+    background-color: rgb(8, 210, 255);
+}
+.result.error{
+    transform: translateX(100px);
+    visibility: visible;
+    background-color: red;
+    color: white;
+}

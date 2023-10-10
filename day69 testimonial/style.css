@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-container {
+    width: 800px;
+    padding: 4vw 6vw;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user {
+    width: 100px;
+    height: 100px;
+}
+
+.user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.user-details{
+    margin-top: 25px;
+    font-family: sans-serif;
+
+}
+.name,
+.status{
+    font-size: 1.2vw;
+    /* padding: 10px; */
+    font-weight: 800;
+}
+.status{
+    padding: 0;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.test{
+    line-height: 25px;
+    font-family: sans-serif;
+
+}
+.line{
+    margin-top: 25px;
+    width: 100%;
+    height: 6px;
+    background-color: crimson;
+    border-radius: 15px;
+    animation: anim 3s infinite;
+}
+@keyframes anim {
+    0%{
+        transform: scaleX(0);
+    }
+}
